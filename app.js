@@ -2,7 +2,7 @@
  * @Author: M.M
  * @Date:   2020-09-21 11:36:50
  * @Last Modified by:   M.M
- * @Last Modified time: 2020-09-22 16:15:10
+ * @Last Modified time: 2020-09-23 17:00:08
  */
 'use strict';
 
@@ -14,14 +14,16 @@ const Router = require("koa-router");
 const app = new Koa();
 const router = new Router();
 
+//接口方法
+class api {
+    static async enrollContent (ctx){
+        ctx.response.body = "<div><img src='./'<div>"
+    }
+}
 
 
-
-
-router.get("/", (ctx, next) => {
-    ctx.body = "xxxx"
-    next()
-})
+//路由
+router.get("/enrollContent", api.enrollContent)
 
 
 app.use(router.routes()) //启动路由

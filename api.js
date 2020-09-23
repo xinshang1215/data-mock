@@ -1,17 +1,18 @@
 /*
  * @Author: M.M
- * @Date:   2020-09-21 14:35:38
+ * @Date:   2020-09-21 14:35:43
  * @Last Modified by:   M.M
- * @Last Modified time: 2020-09-21 16:37:33
+ * @Last Modified time: 2020-09-23 09:45:16
  */
-'use strict';
 
-const 
+const api =  {
 
-import MD from './mockDatas'
+    "enrollContent": (ctx, next) => {
+        ctx.body = "dddd"
+            next()
+    }
 
-
-const api = {
-    "enrollTable":
 }
-export default api
+
+
+export default  api
