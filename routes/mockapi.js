@@ -15,4 +15,8 @@ router.get('/getcustomers', async (ctx, next) => {
     ctx.body = api.getcustomers(ctx.request.header)
 })
 
+router.get('/getmeetings', async (ctx, next) => {
+    ctx.body = api.getmeetings(ctx.request.header)
+})
+
 module.exports = router
